@@ -4,11 +4,11 @@ import logoText from "@/assets/logo-text.png";
 import screenshotLibrary from "@/assets/screenshot-library.png";
 
 const PhoneMockup = () => (
-  <div className="phone-mockup w-56 md:w-64 glow-card">
+  <div className="app-screenshot w-64 md:w-72">
     <img
       src={screenshotLibrary}
       alt="Tactiq Drill Library screenshot"
-      className="absolute inset-0 w-full h-full object-cover object-top"
+      className="w-full h-auto"
     />
   </div>
 );
@@ -26,7 +26,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <img src={logoText} alt="Tactiq" className="h-14 md:h-20 mb-6" />
+            <img src={logoText} alt="Tactiq" className="h-24 md:h-36 mb-6" />
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
               Plan Smarter.{" "}
               <span className="text-gradient-primary">Coach Better.</span>

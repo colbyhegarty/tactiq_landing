@@ -41,11 +41,11 @@ const AppPreview = () => {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <div className="phone-mockup w-40 md:w-48 glow-card">
+              <div className="app-screenshot w-52 md:w-64">
                 <img
                   src={screen.src}
                   alt={`${screen.label} screenshot`}
-                  className="absolute inset-0 w-full h-full object-cover object-top"
+                  className="w-full h-auto"
                 />
               </div>
               <span className="mt-4 text-sm font-semibold text-muted-foreground">
