@@ -91,7 +91,20 @@
   }
 
   .phone-mockup {
-    @apply relative rounded-[2.5rem] border-[3px] border-border bg-card overflow-hidden;
+    @apply relative rounded-[3rem] border-[6px] border-[hsl(220,15%,25%)] bg-black overflow-hidden;
     aspect-ratio: 9 / 19.5;
+    box-shadow:
+      inset 0 0 0 2px hsl(220 10% 15%),
+      0 0 0 1px hsl(220 15% 30%),
+      var(--glow-card);
+  }
+
+  .phone-mockup::before {
+    content: '';
+    @apply absolute top-0 left-1/2 -translate-x-1/2 z-10;
+    width: 35%;
+    height: 28px;
+    background: hsl(220 15% 25%);
+    border-radius: 0 0 1rem 1rem;
   }
 }
