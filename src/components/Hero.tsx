@@ -26,7 +26,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <img src={logoText} alt="Tactiq" className="h-8 md:h-10 mb-6" />
+            <img src={logoText} alt="Tactiq" className="h-14 md:h-20 mb-6" />
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
               Plan Smarter.{" "}
               <span className="text-gradient-primary">Coach Better.</span>
