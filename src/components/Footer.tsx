@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="flex items-center gap-3 text-center md:text-left">
             <img src={logoIcon} alt="Tactiq" className="w-12 h-12" />
             <div>
-              <h3 className="text-lg font-bold mb-0">Tactiq</h3>
+              <h3 className="text-lg font-bold mb-0">TACTIQ</h3>
               <p className="text-sm text-muted-foreground">
                 Plan smarter. Coach better.
               </p>
