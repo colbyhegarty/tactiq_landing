@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
+import screenshotLibrary from "@/assets/screenshot-library.png";
+import screenshotSession from "@/assets/screenshot-session.png";
+import screenshotEditor from "@/assets/screenshot-editor.png";
+import screenshotSessionMode from "@/assets/screenshot-session-mode.png";
 
 const screens = [
-  "Drill Library",
-  "Session Planner",
-  "Drill Editor",
-  "Session Mode",
+  { label: "Drill Library", src: screenshotLibrary },
+  { label: "Session Planner", src: screenshotSession },
+  { label: "Drill Editor", src: screenshotEditor },
+  { label: "Session Mode", src: screenshotSessionMode },
 ];
 
 const AppPreview = () => {
@@ -28,9 +32,9 @@ const AppPreview = () => {
         </motion.div>
 
         <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-          {screens.map((label, i) => (
+          {screens.map((screen, i) => (
             <motion.div
-              key={label}
+              key={screen.label}
               className="flex flex-col items-center"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -38,14 +42,14 @@ const AppPreview = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
               <div className="phone-mockup w-40 md:w-48 glow-card">
-                <div className="absolute inset-0 flex items-center justify-center bg-muted">
-                  <p className="text-muted-foreground text-xs px-4 text-center">
-                    {label} screenshot
-                  </p>
-                </div>
+                <img
+                  src={screen.src}
+                  alt={`${screen.label} screenshot`}
+                  className="absolute inset-0 w-full h-full object-cover object-top"
+                />
               </div>
               <span className="mt-4 text-sm font-semibold text-muted-foreground">
-                {label}
+                {screen.label}
               </span>
             </motion.div>
           ))}

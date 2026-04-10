@@ -1,18 +1,21 @@
 import { motion } from "framer-motion";
 import { Apple } from "lucide-react";
+import logoText from "@/assets/logo-text.png";
+import screenshotLibrary from "@/assets/screenshot-library.png";
 
 const PhoneMockup = () => (
   <div className="phone-mockup w-56 md:w-64 glow-card">
-    <div className="absolute inset-0 flex items-center justify-center bg-muted">
-      <p className="text-muted-foreground text-sm px-6 text-center">App screenshot placeholder</p>
-    </div>
+    <img
+      src={screenshotLibrary}
+      alt="Tactiq Drill Library screenshot"
+      className="absolute inset-0 w-full h-full object-cover object-top"
+    />
   </div>
 );
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-hero" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,hsl(148_38%_45%/0.08),transparent_60%)]" />
 
@@ -23,9 +26,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <span className="inline-block text-sm font-semibold tracking-wider uppercase text-primary mb-4">
-              Soccer Coaching App
-            </span>
+            <img src={logoText} alt="Tactiq" className="h-8 md:h-10 mb-6" />
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
               Plan Smarter.{" "}
               <span className="text-gradient-primary">Coach Better.</span>
