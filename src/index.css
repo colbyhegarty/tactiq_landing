@@ -92,6 +92,5 @@
 
   .app-screenshot {
     @apply rounded-[2rem] overflow-hidden;
-    box-shadow: var(--glow-card);
   }
 }
