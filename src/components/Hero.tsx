@@ -38,12 +38,14 @@ const Hero = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
           >
-            <img
-              src={heroPhones}
-              alt="Tactiq app showing static and animated drill diagrams"
-              className="w-full max-w-xl lg:max-w-2xl h-auto select-none"
-              draggable={false}
-            />
+            <div className="animate-float">
+              <img
+                src={heroPhones}
+                alt="Tactiq app showing static and animated drill diagrams"
+                className="w-full max-w-xl lg:max-w-2xl h-auto select-none"
+                draggable={false}
+              />
+            </div>
           </motion.div>
         </div>
       </div>
