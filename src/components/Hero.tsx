@@ -20,7 +20,7 @@ const Hero = () => {
               <span className="text-gradient-primary">Made Perfect.</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-lg mb-10 leading-relaxed">
-              256 drills, a visual editor, and a session planner — everything a
+              250+ drills, a visual editor, and a session planner — everything a
               soccer coach needs to run training that actually works.
             </p>
             <a
@@ -33,7 +33,7 @@ const Hero = () => {
           </motion.div>
 
           <motion.div
-            className="flex justify-center lg:justify-end"
+            className="flex justify-center lg:justify-end lg:-my-8"
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -42,7 +42,7 @@ const Hero = () => {
               <img
                 src={heroPhones}
                 alt="Tactiq app showing static and animated drill diagrams"
-                className="w-full max-w-xl lg:max-w-2xl h-auto select-none"
+                className="w-full max-w-lg md:max-w-xl lg:max-w-3xl h-auto select-none"
                 draggable={false}
               />
             </div>
