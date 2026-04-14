@@ -11,7 +11,7 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-bold mb-0">TACTIQ</h3>
               <p className="text-sm text-muted-foreground">
-                Plan smarter. Coach better.
+                Your Practice. Made Perfect.
               </p>
             </div>
           </div>

@@ -15,10 +15,10 @@ const Pricing = () => {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(148_38%_45%/0.08),transparent_60%)]" />
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
-              Free to download.
+              Free to download. Ready for game day.
             </h2>
             <p className="text-lg text-muted-foreground mb-10 max-w-lg mx-auto">
-              Built for coaches who take training seriously.
+              No subscriptions, no paywalls. Just open the app and start building better sessions.
             </p>
             <a
               href="#"
