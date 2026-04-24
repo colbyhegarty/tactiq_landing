@@ -1,4 +1,5 @@
 import { Twitter, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 import logoIcon from "@/assets/logo-icon.png";
 
 const Footer = () => {
@@ -17,9 +18,9 @@ const Footer = () => {
           </div>
 
           <nav className="flex items-center gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-foreground transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-foreground transition-colors">Contact</a>
+            <Link to="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-foreground transition-colors">Terms of Service</Link>
+            <a href="mailto:support@tactiqapp.com" className="hover:text-foreground transition-colors">Contact</a>
           </nav>
 
           <div className="flex items-center gap-4">
