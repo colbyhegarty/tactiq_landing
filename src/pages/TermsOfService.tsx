@@ -173,19 +173,11 @@ const TermsOfService = () => {
 
           <h2>14. Developer Information</h2>
           <p>
-            Tactiq is developed and maintained by Colby Hegarty. For any questions, complaints, or claims regarding the App, please contact:
+            Tactiq is developed and maintained by Tactiq. For any questions, complaints, or claims regarding the App, please contact:
           </p>
           <p>
-            <strong className="text-foreground">Colby Hegarty</strong><br />
-            Ipswich, Massachusetts, United States<br />
-            <a href="mailto:support@tactiqapp.com" className="text-primary hover:underline">support@tactiqapp.com</a>
-          </p>
-
-          <h2>15. Contact Us</h2>
-          <p>
-            If you have any questions about these Terms, please contact us at:
-          </p>
-          <p>
+            <strong className="text-foreground">Tactiq</strong><br />
+            Massachusetts, United States<br />
             <a href="mailto:support@tactiqapp.com" className="text-primary hover:underline">support@tactiqapp.com</a>
           </p>
         </div>
