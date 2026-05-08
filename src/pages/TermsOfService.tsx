@@ -144,7 +144,44 @@ const TermsOfService = () => {
             These Terms shall be governed by and construed in accordance with the laws of the United States, without regard to conflict of law principles. Any disputes arising from these Terms or your use of the App shall be resolved in the courts of the United States.
           </p>
 
-          <h2>11. Contact Us</h2>
+          <h2>11. Acknowledgement of Apple's Role</h2>
+          <p>
+            You acknowledge that these Terms are concluded between you and Tactiq only, and not with Apple, Inc. Tactiq, not Apple, is solely responsible for the App and its content. Apple has no obligation whatsoever to furnish any maintenance or support services with respect to the App.
+          </p>
+          <p>
+            In the event of any failure of the App to conform to any applicable warranty, you may notify Apple and Apple will refund the purchase price (if any) for the App. To the maximum extent permitted by applicable law, Apple will have no other warranty obligation with respect to the App.
+          </p>
+          <p>
+            Tactiq, not Apple, is responsible for addressing any claims by you or any third party relating to the App or your use of it, including product liability claims, claims that the App fails to conform to any applicable legal or regulatory requirement, and claims arising under consumer protection or similar legislation.
+          </p>
+          <p>
+            In the event of any third-party claim that the App or your possession and use of the App infringes that third party's intellectual property rights, Tactiq, not Apple, will be solely responsible for the investigation, defense, settlement, and discharge of any such claim.
+          </p>
+
+          <h2>12. Legal Compliance</h2>
+          <p>
+            By using the App, you represent and warrant that: (i) you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a "terrorist supporting" country; and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.
+          </p>
+          <p>
+            You must comply with applicable third-party terms of agreement when using the App.
+          </p>
+
+          <h2>13. Third-Party Beneficiary</h2>
+          <p>
+            You acknowledge and agree that Apple, Inc. and Apple's subsidiaries are third-party beneficiaries of these Terms, and that upon your acceptance of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third-party beneficiary.
+          </p>
+
+          <h2>14. Developer Information</h2>
+          <p>
+            Tactiq is developed and maintained by Colby Hegarty. For any questions, complaints, or claims regarding the App, please contact:
+          </p>
+          <p>
+            <strong className="text-foreground">Colby Hegarty</strong><br />
+            Ipswich, Massachusetts, United States<br />
+            <a href="mailto:support@tactiqapp.com" className="text-primary hover:underline">support@tactiqapp.com</a>
+          </p>
+
+          <h2>15. Contact Us</h2>
           <p>
             If you have any questions about these Terms, please contact us at:
           </p>
