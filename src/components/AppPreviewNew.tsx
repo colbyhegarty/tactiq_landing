@@ -1,12 +1,12 @@
-import { motion } from "framer-motion";
-import screenshotLibrary from "@/assets/screenshot-library.png";
-import screenshotSession from "@/assets/screenshot-session.png";
-import screenshotEditor from "@/assets/screenshot-editor.png";
-import screenshotSessionMode from "@/assets/screenshot-session-mode.png";
 import iphoneFrame from "@/assets/iphone-frame.png";
+import screenshotEditor from "@/assets/screenshot-editor.png";
+import screenshotLibrary from "@/assets/screenshot-library.png";
+import screenshotSessionMode from "@/assets/screenshot-session-mode.png";
+import screenshotSession from "@/assets/screenshot-session.png";
 import videoEditor from "@/assets/video-editor.mp4";
 import videoSessionMode from "@/assets/video-session-mode.mp4";
-import { BookOpen, PenTool, CalendarDays, Play } from "lucide-react";
+import { motion } from "framer-motion";
+import { BookOpen, CalendarDays, PenTool, Play } from "lucide-react";
 
 // Screen inset percentages (measured from the iPhone mockup)
 // These position the video/screenshot inside the phone frame
@@ -31,7 +31,7 @@ const screens: Screen[] = [
     label: "Drill Library",
     poster: screenshotLibrary,
     icon: BookOpen,
-    headline: "256 drills, searchable in seconds",
+    headline: "Hundreds of drills, searchable in seconds",
     description:
       "Filter by category, age group, difficulty, and player count. Every drill comes with a full diagram, setup instructions, and coaching points — no more Googling or flipping through binders.",
   },

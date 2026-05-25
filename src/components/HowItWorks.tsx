@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { Search, LayoutList, Share2 } from "lucide-react";
+import { LayoutList, Search, Share2 } from "lucide-react";
 
 const steps = [
   {
     icon: Search,
     step: "01",
     title: "Browse or create drills",
-    description: "Explore 250+ drills or build your own with the visual editor.",
+    description: "Explore 300+ drills or build your own with the visual editor.",
   },
   {
     icon: LayoutList,

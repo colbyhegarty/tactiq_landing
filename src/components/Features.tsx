@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { BookOpen, CalendarDays, PenTool, FileDown } from "lucide-react";
+import { BookOpen, CalendarDays, FileDown, PenTool } from "lucide-react";
 
 const features = [
   {
     icon: BookOpen,
-    title: "250+ Drill Library",
+    title: "300+ Drill Library",
     description:
       "Browse drills by category, difficulty, age group, and player count. Every drill includes animated diagrams, setup instructions, and coaching points.",
   },
