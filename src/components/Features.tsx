@@ -4,7 +4,7 @@ import { BookOpen, CalendarDays, FileDown, PenTool } from "lucide-react";
 const features = [
   {
     icon: BookOpen,
-    title: "300+ Drill Library",
+    title: "Drill Library",
     description:
       "Browse drills by category, difficulty, age group, and player count. Every drill includes animated diagrams, setup instructions, and coaching points.",
   },

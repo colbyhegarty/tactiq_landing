@@ -31,7 +31,7 @@ const screens: Screen[] = [
     label: "Drill Library",
     poster: screenshotLibrary,
     icon: BookOpen,
-    headline: "Hundreds of drills, searchable in seconds",
+    headline: "300+ drills, searchable in seconds",
     description:
       "Filter by category, age group, difficulty, and player count. Every drill comes with a full diagram, setup instructions, and coaching points — no more Googling or flipping through binders.",
   },

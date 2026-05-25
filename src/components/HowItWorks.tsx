@@ -6,7 +6,7 @@ const steps = [
     icon: Search,
     step: "01",
     title: "Browse or create drills",
-    description: "Explore 300+ drills or build your own with the visual editor.",
+    description: "Explore hundreds of drills or build your own with the visual editor.",
   },
   {
     icon: LayoutList,
