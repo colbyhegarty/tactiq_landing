@@ -1,6 +1,6 @@
+import heroPhones from "@/assets/hero-phones.png";
 import { motion } from "framer-motion";
 import { Apple } from "lucide-react";
-import heroPhones from "@/assets/hero-phones.png";
 
 const Hero = () => {
   return (
@@ -20,7 +20,7 @@ const Hero = () => {
               <span className="text-gradient-primary">Made Perfect.</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-lg mb-10 leading-relaxed">
-              250+ drills, a visual editor, and a session planner — everything a
+              300+ drills, a visual editor, and a session planner — everything a
               soccer coach needs to run training that actually works.
             </p>
             <a
