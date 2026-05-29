@@ -178,7 +178,7 @@ const TermsOfService = () => {
           <p>
             <strong className="text-foreground">Tactiq</strong><br />
             Massachusetts, United States<br />
-            <a href="mailto:support@tactiqapp.com" className="text-primary hover:underline">support@tactiqapp.com</a>
+            <a href="mailto:tactiqhq@gmail.com" className="text-primary hover:underline">tactiqhq@gmail.com</a>
           </p>
         </div>
       </div>

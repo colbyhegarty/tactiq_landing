@@ -114,7 +114,7 @@ const PrivacyPolicy = () => {
             If you have any questions about this Privacy Policy or how Tactiq handles your data, please contact us at:
           </p>
           <p>
-            <a href="mailto:support@tactiqapp.com" className="text-primary hover:underline">support@tactiqapp.com</a>
+            <a href="mailto:tactiqhq@gmail.com" className="text-primary hover:underline">tactiqhq@gmail.com</a>
           </p>
         </div>
       </div>
