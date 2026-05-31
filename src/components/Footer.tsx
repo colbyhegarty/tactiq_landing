@@ -4,26 +4,29 @@ import logoIcon from "@/assets/logo-icon.png";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border py-12">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+    <footer className="border-t border-border py-10 sm:py-12">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="flex flex-col items-center gap-6 sm:gap-8 md:flex-row md:justify-between">
+          {/* Logo */}
           <div className="flex items-center gap-3 text-center md:text-left">
-            <img src={logoIcon} alt="Tactiq" className="w-12 h-12" />
+            <img src={logoIcon} alt="Tactiq" className="w-10 h-10 sm:w-12 sm:h-12" />
             <div>
-              <h3 className="text-lg font-bold mb-0">TACTIQ</h3>
-              <p className="text-sm text-muted-foreground">
+              <h3 className="text-base sm:text-lg font-bold mb-0">TACTIQ</h3>
+              <p className="text-xs sm:text-sm text-muted-foreground">
                 Your Practice. Made Perfect.
               </p>
             </div>
           </div>
 
-          <nav className="flex items-center gap-6 text-sm text-muted-foreground">
-            <Link to="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-foreground transition-colors">Terms of Service</Link>
-            <a href="mailto:support@tactiqapp.com" className="hover:text-foreground transition-colors">Contact</a>
+          {/* Nav links — wrap on very small screens */}
+          <nav className="flex flex-wrap justify-center items-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
+            <Link to="/privacy" className="hover:text-foreground transition-colors whitespace-nowrap">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-foreground transition-colors whitespace-nowrap">Terms of Service</Link>
+            <a href="mailto:support@tactiqapp.com" className="hover:text-foreground transition-colors whitespace-nowrap">Contact</a>
           </nav>
 
-          <div className="flex items-center gap-4">
+          {/* Social icons */}
+          <div className="flex items-center gap-3 sm:gap-4">
             <a href="#" className="w-9 h-9 rounded-lg bg-muted flex items-center justify-center hover:bg-muted/80 transition-colors" aria-label="Twitter">
               <Twitter className="w-4 h-4 text-muted-foreground" />
             </a>
@@ -33,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 text-center text-xs text-muted-foreground">
+        <div className="mt-6 sm:mt-8 text-center text-xs text-muted-foreground">
           © {new Date().getFullYear()} Tactiq. All rights reserved.
         </div>
       </div>

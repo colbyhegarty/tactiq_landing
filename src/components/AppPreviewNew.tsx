@@ -8,8 +8,6 @@ import videoSessionMode from "@/assets/video-session-mode.mp4";
 import { motion } from "framer-motion";
 import { BookOpen, CalendarDays, PenTool, Play } from "lucide-react";
 
-// Screen inset percentages (measured from the iPhone mockup)
-// These position the video/screenshot inside the phone frame
 const SCREEN_INSET = {
   top: "1.94%",
   left: "4.22%",
@@ -63,22 +61,18 @@ const screens: Screen[] = [
   },
 ];
 
-/** Phone mockup wrapper — layers content behind the device frame */
 function PhoneMockup({ children, isVideo }: { children: React.ReactNode; isVideo?: boolean }) {
   return (
-    <div className="relative w-56 md:w-64" style={{ aspectRatio: "1160 / 2371" }}>
-      {/* Screen content */}
+    <div className="relative w-44 sm:w-52 md:w-60" style={{ aspectRatio: "1160 / 2371" }}>
       <div
         className="absolute overflow-hidden"
         style={isVideo ? {
-          // Videos include the status bar — extend area so bezel hides it
           top: "1.94%",
           left: "4.22%",
           width: "91.38%",
           height: "96.29%",
           borderRadius: "7.5%",
         } : {
-          // Static screenshots — exact screen area
           top: SCREEN_INSET.top,
           left: SCREEN_INSET.left,
           width: SCREEN_INSET.width,
@@ -88,7 +82,6 @@ function PhoneMockup({ children, isVideo }: { children: React.ReactNode; isVideo
       >
         {children}
       </div>
-      {/* iPhone frame overlay */}
       <img
         src={iphoneFrame}
         alt=""
@@ -101,31 +94,31 @@ function PhoneMockup({ children, isVideo }: { children: React.ReactNode; isVideo
 
 const AppPreview = () => {
   return (
-    <section id="preview" className="py-24 md:py-32 relative overflow-hidden">
+    <section id="preview" className="py-16 sm:py-24 md:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(148_38%_45%/0.06),transparent_70%)]" />
-      <div className="container relative z-10 mx-auto px-6">
+      <div className="container relative z-10 mx-auto px-4 sm:px-6">
         <motion.div
-          className="text-center mb-20"
+          className="text-center mb-12 sm:mb-16 md:mb-20"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
             See it in <span className="text-gradient-primary">action</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto">
             Designed for coaches, built for the sideline.
           </p>
         </motion.div>
 
-        <div className="flex flex-col gap-24 md:gap-32">
+        <div className="flex flex-col gap-16 sm:gap-20 md:gap-32">
           {screens.map((screen, i) => {
             const isReversed = i % 2 === 1;
             return (
               <motion.div
                 key={screen.label}
-                className={`flex flex-col items-center gap-10 md:gap-16 ${
+                className={`flex flex-col items-center gap-8 md:gap-16 ${
                   isReversed ? "md:flex-row-reverse" : "md:flex-row"
                 }`}
                 initial={{ opacity: 0, y: 40 }}
@@ -133,7 +126,7 @@ const AppPreview = () => {
                 viewport={{ once: true, margin: "-80px" }}
                 transition={{ duration: 0.6, delay: 0.1 }}
               >
-                {/* Phone mockup with content */}
+                {/* Phone mockup */}
                 <div className="flex-shrink-0">
                   <PhoneMockup isVideo={!!screen.video}>
                     {screen.video ? (
@@ -156,20 +149,20 @@ const AppPreview = () => {
                   </PhoneMockup>
                 </div>
 
-                {/* Copy */}
-                <div className="flex-1 max-w-lg text-center md:text-left">
-                  <div className="inline-flex items-center gap-2 mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <screen.icon className="w-5 h-5 text-primary" />
+                {/* Copy — centered on mobile, left-aligned on desktop */}
+                <div className="flex-1 max-w-lg text-center md:text-left px-2 sm:px-0">
+                  <div className="inline-flex items-center gap-2 mb-3 sm:mb-4">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                      <screen.icon className="w-4 h-4 sm:w-5 sm:h-5 text-primary" />
                     </div>
                     <span className="text-xs font-bold text-primary uppercase tracking-widest">
                       {screen.label}
                     </span>
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-extrabold mb-4 leading-tight">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold mb-3 sm:mb-4 leading-tight">
                     {screen.headline}
                   </h3>
-                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                  <p className="text-muted-foreground text-sm sm:text-base md:text-lg leading-relaxed">
                     {screen.description}
                   </p>
                 </div>

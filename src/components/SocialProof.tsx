@@ -24,36 +24,37 @@ const testimonials = [
 
 const SocialProof = () => {
   return (
-    <section className="py-24 md:py-32 relative">
-      <div className="container mx-auto px-6">
+    <section className="py-16 sm:py-24 md:py-32 relative">
+      <div className="container mx-auto px-4 sm:px-6">
         <motion.div
-          className="text-center mb-16"
+          className="text-center mb-10 sm:mb-16"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold mb-4">
             Coaches are{" "}
             <span className="text-gradient-gold">loving it</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
+          <p className="text-muted-foreground text-base sm:text-lg max-w-xl mx-auto">
             Hear from coaches who've made the switch.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        {/* Single column on mobile, 3-col on md+ */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
           {testimonials.map((t, i) => (
             <motion.div
               key={t.name}
-              className="bg-card border border-border rounded-2xl p-6 relative glow-card"
+              className="bg-card border border-border rounded-2xl p-5 sm:p-6 relative glow-card"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <Quote className="w-8 h-8 text-primary/20 mb-4" />
-              <div className="flex gap-0.5 mb-4">
+              <Quote className="w-7 h-7 sm:w-8 sm:h-8 text-primary/20 mb-3 sm:mb-4" />
+              <div className="flex gap-0.5 mb-3 sm:mb-4">
                 {Array.from({ length: 5 }).map((_, j) => (
                   <Star
                     key={j}
@@ -61,7 +62,7 @@ const SocialProof = () => {
                   />
                 ))}
               </div>
-              <p className="text-sm leading-relaxed text-foreground/90 mb-6">
+              <p className="text-sm leading-relaxed text-foreground/90 mb-5 sm:mb-6">
                 "{t.quote}"
               </p>
               <div>
