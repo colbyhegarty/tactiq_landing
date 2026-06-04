@@ -50,7 +50,7 @@ const Navbar = () => {
 
         <div className="hidden md:block">
           <a
-            href="#"
+            href="https://apps.apple.com/us/app/tactiq-practice-planner/id6763797389"
             className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 hover:scale-105"
           >
             <Apple className="w-4 h-4" />
@@ -92,7 +92,7 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="#"
+                href="https://apps.apple.com/us/app/tactiq-practice-planner/id6763797389"
                 className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground text-sm font-semibold px-5 py-3 rounded-lg transition-all duration-200"
               >
                 <Apple className="w-4 h-4" />

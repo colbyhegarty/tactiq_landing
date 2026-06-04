@@ -21,7 +21,7 @@ const Pricing = () => {
               Browse drills, build sessions, and run them on the field — all free. Unlock the full library and advanced features with Pro.
             </p>
             <a
-              href="#"
+              href="https://apps.apple.com/us/app/tactiq-practice-planner/id6763797389"
               className="inline-flex items-center gap-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl transition-all duration-200 hover:scale-105 glow-primary text-sm sm:text-base"
             >
               <Apple className="w-5 h-5" />
