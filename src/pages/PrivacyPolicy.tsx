@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
 
         <h1 className="text-3xl font-bold mb-2">Privacy Policy</h1>
         <p className="text-sm text-muted-foreground mb-10">
-          Last updated: {new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+          Last updated: July 11, 2025
         </p>
 
         <div className="prose prose-invert prose-sm max-w-none space-y-8 text-muted-foreground [&_h2]:text-foreground [&_h2]:text-lg [&_h2]:font-semibold [&_h2]:mt-10 [&_h2]:mb-3 [&_h3]:text-foreground [&_h3]:text-base [&_h3]:font-medium [&_h3]:mt-6 [&_h3]:mb-2 [&_p]:leading-relaxed [&_li]:leading-relaxed">
@@ -41,7 +41,10 @@ const PrivacyPolicy = () => {
 
           <h3>Information Collected Automatically</h3>
           <p>
-            Tactiq does not use analytics SDKs, tracking pixels, or any third-party analytics tools. We do not collect device identifiers, usage statistics, crash reports, or behavioral data.
+            Tactiq uses the Meta (Facebook) SDK to measure the effectiveness of our advertising campaigns. If you grant permission through the App Tracking Transparency prompt on iOS, your device's advertising identifier (IDFA) may be collected and used to attribute app installs and measure ad performance across apps and websites owned by Meta and its partners. If you deny permission, no advertising identifier is collected and no cross-app tracking occurs.
+          </p>
+          <p>
+            The Meta SDK may also automatically log certain in-app events such as app installs and app opens, even without tracking permission, for the purpose of aggregate, non-personalized measurement.
           </p>
 
           <h3>Drill Library Data</h3>
@@ -51,7 +54,7 @@ const PrivacyPolicy = () => {
 
           <h3>Subscription Information</h3>
           <p>
-            If you subscribe to Tactiq Pro, your purchase is processed entirely through Apple's App Store and our subscription management provider, RevenueCat. We do not collect or store your payment information, credit card number, or Apple ID. RevenueCat receives a anonymous app user ID to manage your subscription entitlements. For details on how Apple and RevenueCat handle your data, please refer to their respective privacy policies:
+            If you subscribe to Tactiq Pro, your purchase is processed entirely through Apple's App Store and our subscription management provider, RevenueCat. We do not collect or store your payment information, credit card number, or Apple ID. RevenueCat receives an anonymous app user ID to manage your subscription entitlements. For details on how Apple and RevenueCat handle your data, please refer to their respective privacy policies:
           </p>
           <ul className="list-disc pl-6 space-y-1">
             <li><a href="https://www.apple.com/legal/privacy/" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Apple Privacy Policy</a></li>
@@ -60,17 +63,15 @@ const PrivacyPolicy = () => {
 
           <h2>2. How We Use Your Information</h2>
           <p>
-            Since your data is stored locally on your device, we use it solely to provide the app's functionality:
+            We use the information we collect for the following purposes:
           </p>
           <ul className="list-disc pl-6 space-y-1">
             <li>Displaying your profile and preferences within the app</li>
             <li>Saving and organizing your training sessions and custom drills</li>
             <li>Enabling you to share session PDFs with contacts you have entered</li>
             <li>Managing your subscription status (free or Pro tier)</li>
+            <li>Measuring the effectiveness of our advertising campaigns through Meta's advertising platform (only if you grant tracking permission)</li>
           </ul>
-          <p>
-            We do not sell, rent, or share your personal information with any third parties for marketing or advertising purposes.
-          </p>
 
           <h2>3. Data Storage and Security</h2>
           <p>
@@ -87,29 +88,39 @@ const PrivacyPolicy = () => {
           <ul className="list-disc pl-6 space-y-1">
             <li><strong className="text-foreground">Session sharing:</strong> When you choose to export a session as a PDF and share it, the PDF is generated locally on your device and shared through your device's native share functionality (email, messaging, etc.). We do not process or store shared PDFs on any server.</li>
             <li><strong className="text-foreground">Subscription processing:</strong> Subscription purchases are handled by Apple and RevenueCat as described above.</li>
+            <li><strong className="text-foreground">Advertising measurement:</strong> If you grant App Tracking Transparency permission, your device's advertising identifier may be shared with Meta Platforms, Inc. for the purpose of measuring ad campaign performance. You can withdraw this permission at any time in your device's Privacy & Security settings.</li>
           </ul>
 
-          <h2>5. Children's Privacy</h2>
+          <h2>5. App Tracking Transparency (iOS)</h2>
+          <p>
+            On iOS 14 and later, Tactiq will ask for your permission to track your activity across other companies' apps and websites. This permission is used solely to measure the effectiveness of our advertising campaigns on Meta platforms (Facebook and Instagram). If you deny permission, the app will function identically — no features are restricted based on your tracking choice.
+          </p>
+          <p>
+            You can change your tracking preference at any time by going to <strong className="text-foreground">Settings → Privacy & Security → Tracking</strong> on your iPhone.
+          </p>
+
+          <h2>6. Children's Privacy</h2>
           <p>
             Tactiq is designed for soccer coaches and is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will take steps to address the situation.
           </p>
 
-          <h2>6. Your Choices</h2>
+          <h2>7. Your Choices</h2>
           <p>
-            Since all data is stored locally on your device, you have full control over it:
+            Since all personal data is stored locally on your device, you have full control over it:
           </p>
           <ul className="list-disc pl-6 space-y-1">
             <li><strong className="text-foreground">Delete your data:</strong> Use the "Clear All Data" option in the app's Profile settings to remove all locally stored information.</li>
             <li><strong className="text-foreground">Uninstall the app:</strong> Removing Tactiq from your device will delete all associated data.</li>
             <li><strong className="text-foreground">Manage subscriptions:</strong> You can manage or cancel your subscription through your Apple ID settings.</li>
+            <li><strong className="text-foreground">Opt out of tracking:</strong> You can withdraw App Tracking Transparency permission at any time in Settings → Privacy & Security → Tracking.</li>
           </ul>
 
-          <h2>7. Changes to This Policy</h2>
+          <h2>8. Changes to This Policy</h2>
           <p>
             We may update this Privacy Policy from time to time. If we make material changes, we will update the "Last updated" date at the top of this page. We encourage you to review this policy periodically.
           </p>
 
-          <h2>8. Contact Us</h2>
+          <h2>9. Contact Us</h2>
           <p>
             If you have any questions about this Privacy Policy or how Tactiq handles your data, please contact us at:
           </p>
